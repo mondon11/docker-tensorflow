@@ -15,6 +15,6 @@ ENV PATH /usr/local/anaconda3/bin:$PATH
 RUN pip install --upgrade pip
 # install tensorflow
 #RUN pip install --upgrade tensorflow
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tensorflow==1.14.0-gpu
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tensorflow-gpu==1.14.0
 # solve import warning
 RUN pip install --upgrade h5py
