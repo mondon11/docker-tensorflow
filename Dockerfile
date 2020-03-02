@@ -13,7 +13,9 @@ ENV PATH /usr/local/anaconda3/bin:$PATH
 # update repo
 # RUN sh -c echo -e "y\n" | conda update conda
 RUN pip install --upgrade pip PyHamcrest setuptools
-RUN pip install -U --ignore-installed wrapt enum34 simplejson netaddr opencv-python
+RUN pip install -U --ignore-installed wrapt enum34 simplejson netaddr
+# install opencv-python
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ opencv-python==4.1.2
 # install tensorflow
 #RUN pip install --upgrade tensorflow
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tensorflow-gpu==1.14.0
