@@ -3,7 +3,7 @@ FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
 MAINTAINER hhp <hanxiaohui93@163.com>
 # install basic dependencies
 RUN apt-get update
-RUN apt-get install -y wget bzip2 \
+RUN apt-get install -y wget zip bzip2 \
                    libgl1-mesa-glx
 # install Anaconda3 python3.7
 RUN wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh -O ~/anaconda3.sh
