@@ -20,7 +20,7 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tensorflow-gpu==1.1
 # solve import warning
 RUN pip install --upgrade h5py
 
-
-RUN apt-get install libsm6
 # install opencv-python
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ opencv-python==4.1.2.30
+
+RUN apt-get install libsm6 libxext6 libxrender-dev
