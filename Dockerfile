@@ -22,5 +22,7 @@ RUN pip install --upgrade h5py
 
 # install opencv-python
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ opencv-python==4.1.2.30
-
 RUN apt-get install -y libsm6 libxext6 libxrender-dev
+
+# install tifffile
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tifffile==0.15.1
