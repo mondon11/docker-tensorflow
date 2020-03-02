@@ -23,4 +23,4 @@ RUN pip install --upgrade h5py
 # install opencv-python
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ opencv-python==4.1.2.30
 
-RUN apt-get install libsm6 libxext6 libxrender-dev
+RUN apt-get install -y libsm6 libxext6 libxrender-dev
