@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y wget zip bzip2 
                    libgl1-mesa-glx \
                    net-tools inetutils-ping vim git \
                    openssh-server openssh-client \
-		   build-essential cmake \
  		&& apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install Anaconda3 python3.7

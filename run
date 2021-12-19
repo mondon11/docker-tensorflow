@@ -1,1 +1,1 @@
-docker run -itd --name cuda10.0-cudnn7-ubuntu18.04-python3.7-tf1.14-devel --gpus all -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVDIA_VISIBLE_DEVICES=all -v /home/mondon/:/home/mondon/ cuda10.0-cudnn7-ubuntu18.04-python3.7-tf1.14-devel:20211017213915
+docker run -itd --name hjt_dev_002 --gpus all -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVDIA_VISIBLE_DEVICES=all -v /home/mondon/:/home/mondon/ cuda10.0-cudnn7-ubuntu18.04-python3.7-tf1.14-torch1.2-devel:20211214231508

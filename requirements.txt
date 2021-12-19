@@ -1,0 +1,17 @@
+tensorflow-gpu==1.14.0
+pandas==0.23.4
+Keras==2.3.1
+keras_bert==0.83.0
+numpy==1.16.4
+scikit_learn==0.24.0
+pydub
+Levenshtein
+h5py==2.10
+openpyxl==3.0.3
+torch==1.2.0
+tqdm==4.28.1
+nltk==3.4.1
+spacy
+prettytable==0.7.2
+fastNLP==0.5.0
+fitlog
