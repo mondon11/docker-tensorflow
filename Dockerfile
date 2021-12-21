@@ -1,8 +1,9 @@
 # base image
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+# FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:11.4.1-cudnn8-devel-ubuntu18.04
 MAINTAINER hjt <houjiateng@aliyun.com>
 # install basic dependencies
-RUN apt-get update && apt-get install --no-install-recommends -y wget zip bzip2 \
+RUN apt-get update && apt-get install --no-install-recommends -y wget zip unzip bzip2 \
                    libgl1-mesa-glx \
                    net-tools inetutils-ping vim git \
                    openssh-server openssh-client \

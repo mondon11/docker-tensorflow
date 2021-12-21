@@ -1,1 +1,4 @@
-docker run -itd --name hjt_dev_002 --gpus all -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVDIA_VISIBLE_DEVICES=all -v /home/mondon/:/home/mondon/ cuda10.0-cudnn7-ubuntu18.04-python3.7-tf1.14-torch1.2-devel:20211214231508
+docker19之后的版本:
+docker run -itd --name YOUR_CONTAINER_NAME --shm-size=32G --gpus all -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVDIA_VISIBLE_DEVICES=all -p xxx:xxx -v xxx:xxx IMAGE_NAME:IMAGE_TAG
+docker19之前的版本:
+docker run -itd --name YOUR_CONTAINER_NAME --shm-size=32G --runtime=nvidia -p xxx:xxx -v xxx:xxx IMAGE_NAME:IMAGE_TAG
