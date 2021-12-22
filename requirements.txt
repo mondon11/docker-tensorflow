@@ -8,7 +8,6 @@ pydub
 Levenshtein
 h5py==2.10
 openpyxl==3.0.3
-torch==1.2.0
 tqdm==4.28.1
 nltk==3.4.1
 spacy

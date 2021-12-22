@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER=cuda11.4.1-cudnn8-ubuntu18.04-python3.7-tf1.14-torch1.2-devel
+CONTAINER=cuda11.4.1-cudnn8-ubuntu18.04-python3.7-tf1.14-torch1.10-devel
 TAG=$(date '+%Y%m%d%H%M%S') 
 
 DOCKER_IMAGE=$CONTAINER:$TAG
